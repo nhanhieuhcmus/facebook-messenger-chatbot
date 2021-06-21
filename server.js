@@ -1,6 +1,6 @@
 // # SimpleServer
 // A simple chat bot server
-const TOKEN = 'EAANVYhHJOZBkBAN9CyaGkK7kEDiy04YTFDxZAWzBDZAZBhKVZCvaRMoVb8HXGS3K83XOUKQvbqFyTNKRCDYLqZAjWNXajovZCCkX4RycJ4VD6ggz9suo7eZCn8as3FRAIMTAcWnQIBmteHor9QC5iZCZCvKZC4GqKdZBzSJDmBwetKZC6fJxwAbf8odbHP78MmulGZCl79pQ4TeBzzTQZDZD';
+var TOKEN = 'EAANVYhHJOZBkBAN9CyaGkK7kEDiy04YTFDxZAWzBDZAZBhKVZCvaRMoVb8HXGS3K83XOUKQvbqFyTNKRCDYLqZAjWNXajovZCCkX4RycJ4VD6ggz9suo7eZCn8as3FRAIMTAcWnQIBmteHor9QC5iZCZCvKZC4GqKdZBzSJDmBwetKZC6fJxwAbf8odbHP78MmulGZCl79pQ4TeBzzTQZDZD';
 var logger = require('morgan');
 var http = require('http');
 var bodyParser = require('body-parser');
@@ -57,7 +57,7 @@ function sendMessage(senderId, message) {
     url: 'https://graph.facebook.com/v11.0/me/messages',
 
     qs: {
-      access_token: TOKEN,
+      access_token: "EAANVYhHJOZBkBAN9CyaGkK7kEDiy04YTFDxZAWzBDZAZBhKVZCvaRMoVb8HXGS3K83XOUKQvbqFyTNKRCDYLqZAjWNXajovZCCkX4RycJ4VD6ggz9suo7eZCn8as3FRAIMTAcWnQIBmteHor9QC5iZCZCvKZC4GqKdZBzSJDmBwetKZC6fJxwAbf8odbHP78MmulGZCl79pQ4TeBzzTQZDZD",
     },
     method: 'POST',
     json: {
